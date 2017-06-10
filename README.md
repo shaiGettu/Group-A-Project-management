@@ -2,7 +2,7 @@
 
 THIS is read me file for pre run the widgets:
 
-1) Create database named login and create the 3 tables below
+1) Create database named "login" and create the 3 tables below
 
 CREATE TABLE pictures (
     user VARCHAR(200) NOT NULL,
