@@ -8,6 +8,7 @@ CREATE TABLE pictures (
     user VARCHAR(200) NOT NULL,
     image LONGBLOB NOT NULL
 );
+
 CREATE TABLE tbl_users (
     unique_id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(200) NOT NULL,
@@ -16,6 +17,7 @@ CREATE TABLE tbl_users (
     salt VARCHAR(255) NOT NULL,
     created_at DATE NOT NULL
 );
+
 CREATE TABLE todolist_tasks (
     user VARCHAR(50) NOT NULL,
     taskTitle VARCHAR(100) NOT NULL,
