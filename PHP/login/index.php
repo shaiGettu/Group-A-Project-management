@@ -3,6 +3,7 @@
 require_once 'register.php';
 require_once 'login.php';
 require_once 'forgot_password.php';
+require_once 'db_decorator.php';
 
 $request = $_GET["request"];
 $json_object = json_decode($request);
@@ -13,6 +14,7 @@ if ($index == 0) {
 	$email = $json_object -> {"email"};
 	$password = $json_object -> {"password"};
 	$register_object = new Register($username, $email, $password);
+	$decorator = new DB_Decorator($register_object);
 	$register_object->register();
 }
 
