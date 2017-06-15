@@ -21,6 +21,10 @@ class Register {
 
     }
 
+    public function getDB() {
+        return $this->db;
+    }
+
     public function register() {
         // json response array
         $response = array("error" => FALSE);
