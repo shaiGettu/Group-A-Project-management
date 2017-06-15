@@ -13,6 +13,4 @@ class DB_Decorator {
     function resetDB() {
 	  $this->db = $this->register->getDB();
 	}
-
-
 }
